@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Leaflet map polygon tabs</title>
+    <!-- Current Leaflet is beta. Check for updates at http://leafletjs.com/download.html -->
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v1.0.0-beta.2/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  </body>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Current Leaflet is beta. Check for updates at http://leafletjs.com/download.html -->
+  <script type="text/javascript" src="http://cdn.leafletjs.com/leaflet/v1.0.0-beta.2/leaflet.js"></script>
+  <!-- <script type="text/javascript" src="underscore.js"></script> -->
+  <script type="text/javascript" src="ctborders.js"></script>
+  <script type="text/javascript" src="data.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <!-- div to display container, tabs, and map; add more for title and caption if desired -->
+  <div class="interactiveContainer">
+    <div class="toolbar">
+      <div class="toolItem selected">2008-09</div>
+      <div class="toolItem">2009-10</div>
+      <div class="toolItem">2010-11</div>
+      <div class="toolItem">2011-12</div>
+      <div class="toolItem">2012-13</div>
+    </div>
+    <div class="mapContainer">
+      <div id="map" tabindex="0">
+          <!-- remove fixed legend and replace with js legend -->
+          <!-- <div id="legend>" class="leaflet-map-pane"><img class="legend" src="legend.png"></div> -->
+      </div>
+    </div>
+</body>
+</html>
